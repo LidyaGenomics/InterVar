@@ -1790,17 +1790,60 @@ def assign(BP,line,Freqs_flgs,Funcanno_flgs,Allels_flgs):
     return(BP_out)
 
 
+# Column name aliases: maps internal key names to possible ANNOVAR output column
+# names across different database versions. When search_key_index() fails to find
+# an exact match for a key, it tries these aliases in order (newest first).
+# This allows InterVar to work with gnomAD v4.x, newer avsnp, etc. without
+# changing every reference throughout the codebase.
+COLUMN_ALIASES = {
+    # gnomAD genome: v4.1/v4.0 use "gnomadXX_genome_AF" format,
+    # v3.x uses "gnomadXXX_genome_AF", v2.x uses "gnomAD_genome_ALL"
+    'gnomAD_genome_ALL': ['gnomad41_genome_AF', 'gnomad40_genome_AF',
+                          'gnomad312_genome_AF', 'gnomad30_genome_AF',
+                          'gnomad211_genome_AF'],
+    'gnomAD_genome_AFR': ['gnomad41_genome_AF_afr', 'gnomad40_genome_AF_afr',
+                          'gnomad312_genome_AF_afr', 'gnomad211_genome_AF_afr'],
+    'gnomAD_genome_AMR': ['gnomad41_genome_AF_amr', 'gnomad40_genome_AF_amr',
+                          'gnomad312_genome_AF_amr', 'gnomad211_genome_AF_amr'],
+    'gnomAD_genome_EAS': ['gnomad41_genome_AF_eas', 'gnomad40_genome_AF_eas',
+                          'gnomad312_genome_AF_eas', 'gnomad211_genome_AF_eas'],
+    'gnomAD_genome_FIN': ['gnomad41_genome_AF_fin', 'gnomad40_genome_AF_fin',
+                          'gnomad312_genome_AF_fin', 'gnomad211_genome_AF_fin'],
+    'gnomAD_genome_NFE': ['gnomad41_genome_AF_nfe', 'gnomad40_genome_AF_nfe',
+                          'gnomad312_genome_AF_nfe', 'gnomad211_genome_AF_nfe'],
+    'gnomAD_genome_OTH': ['gnomad41_genome_AF_remaining', 'gnomad40_genome_AF_remaining',
+                          'gnomad312_genome_AF_oth', 'gnomad211_genome_AF_oth'],
+    'gnomAD_genome_ASJ': ['gnomad41_genome_AF_asj', 'gnomad40_genome_AF_asj',
+                          'gnomad312_genome_AF_asj', 'gnomad211_genome_AF_asj'],
+    # avsnp: column name includes version number
+    'avsnp147': ['avsnp151', 'avsnp150', 'avsnp144', 'avsnp142'],
+}
+
 def search_key_index(line,dict):
     cls=line.split('\t')
     for key in dict.keys():
+        found=False
         for i in range(1,len(cls)):
             ii=i-1
             if key==cls[ii]:
                 dict[key]=ii
+                found=True
                 break
             if key=="Otherinfo":
                 if cls[ii]==key or cls[ii]=="Otherinfo1":
                     dict[key]=ii
+                    found=True
+                    break
+        # If exact match failed, try column aliases
+        if not found and key in COLUMN_ALIASES:
+            for alias in COLUMN_ALIASES[key]:
+                for i in range(1,len(cls)):
+                    ii=i-1
+                    if alias==cls[ii]:
+                        dict[key]=ii
+                        found=True
+                        break
+                if found:
                     break
     return
 
