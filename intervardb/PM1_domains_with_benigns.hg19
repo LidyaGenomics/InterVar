@@ -1723,3 +1723,29 @@ X	SRPK3	Protein kinase domain|Protein kinase domain;.;Protein kinase domain|Prot
 X	TAZ	Phospholipid/glycerol acyltransferase;Phospholipid/glycerol acyltransferase|Phospholipid/glycerol acyltransferase;Phospholipid/glycerol acyltransferase|Phospholipid/glycerol acyltransferase
 X	TBX22	Transcription factor, T-box, conserved site;Transcription factor, T-box, conserved site
 X	ZNF41	Zinc finger C2H2-type;Zinc finger C2H2-type
+10	DUSP13B	Dual specificity protein phosphatase domain|Dual specificity protein phosphatase domain;Dual specificity protein phosphatase domain|Dual specificity protein phosphatase domain;Dual specificity protein phosphatase domain|Dual specificity protein phosphatase domain;Dual specificity protein phosphatase domain|Dual specificity protein phosphatase domain;Dual specificity protein phosphatase domain|Dual specificity protein phosphatase domain;Dual specificity protein phosphatase domain|Dual specificity protein phosphatase domain;.
+11	SLC67A1	Major facilitator superfamily domain|Major facilitator superfamily domain;Major facilitator superfamily domain|Major facilitator superfamily domain;Major facilitator superfamily domain|Major facilitator superfamily domain;Major facilitator superfamily domain|Major facilitator superfamily domain;Major facilitator superfamily domain
+16	AARS1	Alanyl-tRNA synthetase, class IIc, N-terminal|Alanyl-tRNA synthetase, class IIc, core domain
+16	DRC4	.;Growth arrest-specific protein 8 domain;Growth arrest-specific protein 8 domain
+16	NHERF2	PDZ domain|PDZ domain|PDZ domain;.
+17	FBXW10B	WD40-repeat-containing domain;.;WD40-repeat-containing domain
+17	HEXD	.;Glycoside hydrolase family 20, catalytic domain;Glycoside hydrolase family 20, catalytic domain;Glycoside hydrolase family 20, catalytic domain;Glycoside hydrolase family 20, catalytic domain
+19	ZNF875	.;Krueppel-associated box|Krueppel-associated box|Krueppel-associated box|Krueppel-associated box;Krueppel-associated box|Krueppel-associated box|Krueppel-associated box|Krueppel-associated box;Krueppel-associated box|Krueppel-associated box|Krueppel-associated box|Krueppel-associated box
+19	HACL2	Thiamine pyrophosphate enzyme, N-terminal TPP-binding domain;Thiamine pyrophosphate enzyme, N-terminal TPP-binding domain;Thiamine pyrophosphate enzyme, N-terminal TPP-binding domain;Thiamine pyrophosphate enzyme, N-terminal TPP-binding domain;Thiamine pyrophosphate enzyme, N-terminal TPP-binding domain
+1	MTARC1	MOSC, N-terminal beta barrel
+2	QTMAN	Glycosyltransferase family 1, N-terminal;Glycosyltransferase family 1, N-terminal;.;.;.;Glycosyltransferase family 1, N-terminal;Glycosyltransferase family 1, N-terminal;Glycosyltransferase family 1, N-terminal;.;Glycosyltransferase family 1, N-terminal
+2	SLC67A2	Major facilitator superfamily domain|Major facilitator superfamily domain
+5	LARS1	Methionyl/Valyl/Leucyl/Isoleucyl-tRNA synthetase, anticodon-binding;.;.
+5	RARS1	Arginyl-tRNA synthetase, catalytic core domain|Arginyl-tRNA synthetase, catalytic core domain
+5	STING1	Stimulator of interferon genes protein, C-terminal;.
+6	MMUT	Cobalamin (vitamin B12)-binding domain|Cobalamin (vitamin B12)-binding domain|Methylmalonyl-CoA mutase, C-terminal
+6	MMUT	Methylmalonyl-CoA mutase, alpha/beta chain, catalytic|Methylmalonyl-CoA mutase, alpha chain, catalytic
+6	SKIC2	ATP-dependent RNA helicase Ski2, C-terminal
+6	SKIC2	rRNA-processing arch domain
+6	VARS1	Aminoacyl-tRNA synthetase, class Ia
+6	VARS1	Glutathione S-transferase, C-terminal|Glutathione S-transferase, C-terminal-like
+6	VARS1	Methionyl/Valyl/Leucyl/Isoleucyl-tRNA synthetase, anticodon-binding|Valyl tRNA synthetase, anticodon-binding domain
+6	CCN6	.;Insulin-like growth factor-binding protein, IGFBP|Insulin-like growth factor-binding protein, IGFBP|Insulin-like growth factor-binding protein, IGFBP;Insulin-like growth factor-binding protein, IGFBP|Insulin-like growth factor-binding protein, IGFBP|Insulin-like growth factor-binding protein, IGFBP;Insulin-like growth factor-binding protein, IGFBP|Insulin-like growth factor-binding protein, IGFBP|Insulin-like growth factor-binding protein, IGFBP;Insulin-like growth factor-binding protein, IGFBP|Insulin-like growth factor-binding protein, IGFBP|Insulin-like growth factor-binding protein, IGFBP
+9	SPATA31F1	SPATA31/FAM205
+X	ARSL	Sulfatase, N-terminal;Sulfatase, N-terminal;Sulfatase, N-terminal
+X	TAFAZZIN	Phospholipid/glycerol acyltransferase;Phospholipid/glycerol acyltransferase|Phospholipid/glycerol acyltransferase;Phospholipid/glycerol acyltransferase|Phospholipid/glycerol acyltransferase
